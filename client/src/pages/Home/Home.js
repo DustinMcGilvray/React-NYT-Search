@@ -65,11 +65,12 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+      <Navbar />
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12 center-align">
               <SearchForm
+                // className={this.state.articles.length ? "noDisplay": "display"}
                 formSubmit={this.formSubmit}
                 handleInputChange={this.handleInputChange}
               />

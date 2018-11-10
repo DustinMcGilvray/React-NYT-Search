@@ -8,9 +8,7 @@ const SavedNavbar = () => {
     return(
         <nav id="app-title" className="navbar transparent">
             <Link className="navbar-brand text-white" to="/">
-            <a href= "http://developer.nytimes.com" target="_blank" rel="noopener noreferrer">
-                <img id="nyt-logo" src={nyt_logo} width="30" height="30" className="d-inline-block align-top" alt=""></img>
-                </a>
+                <img id="nyt-logo" src={nyt_logo} width="30" height="30" alt=""></img>
             New York Times Article Search
             </Link>
             <form className="form-inline">

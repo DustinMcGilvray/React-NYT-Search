@@ -13,3 +13,7 @@
 .card-body {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.noDisplay {
+    display: none;
+}

@@ -4,7 +4,8 @@ import "./SearchForm.css";
 const SearchForm = props => {
   return (
     <div className="container">
-      <form id="searchForm">
+{/* Add this to opening form tag for redner articles in place og search form className= {props.className} */}
+      <form id="searchForm"> 
         <div className="form-row">
           <div id="search-term" className="form-group col-md-12">
             <label for="Search Topic" />
@@ -41,15 +42,15 @@ const SearchForm = props => {
             />
           </div>
         </div>
+          <button
+            type="submit"
+            className="btn btn-primary"
+            onClick={props.formSubmit}
+          >
+            Submit
+          </button>
       </form>
 
-      <button
-        type="submit"
-        className="btn btn-primary"
-        onClick={props.formSubmit}
-      >
-        Submit
-      </button>
     </div>
   );
 };
