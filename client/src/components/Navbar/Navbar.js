@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import nyt_logo from "./nyt_logo.png";
 import "./Navbar.css";
 
@@ -6,14 +7,14 @@ import "./Navbar.css";
 const NavBar = () => {
     return(
         <nav id="app-title" className="navbar transparent">
-            <a className="navbar-brand text-white" href="/">
+            <Link className="navbar-brand text-white" to="/">
             <a href= "http://developer.nytimes.com" target="_blank" rel="noopener noreferrer">
                 <img id="nyt-logo" src={nyt_logo} width="30" height="30" className="d-inline-block align-top" alt=""></img>
                 </a>
             New York Times Article Search
-            </a>
+            </Link>
             <form className="form-inline">
-            <button className="btn btn-primary"><a className="saved-article-link text-white" href="/saved">Saved Articles</a></button>
+            <Link className="saved-article-link text-white" to="/saved"><button className="btn btn-primary">Saved Articles</button></Link>
             </form>
         </nav>       
     )
