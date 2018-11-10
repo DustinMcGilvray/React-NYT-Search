@@ -11,6 +11,7 @@ app.use(express.json());
 
 //Serve Static Assets
   app.use(express.static("public"));
+  app.set("port", PORT);
 // Add routes, both API and view
 app.use(routes);
 
