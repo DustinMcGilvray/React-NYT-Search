@@ -5,6 +5,8 @@
 ## Overview
 This is a React-based article search application for the New York Times. It utilizes the React mounting lifecycle to query and display articles based on three criteria: search topic, start date and end date. A query is then sent to the New York Times API and articles fitting the search criteria are returned.  
 
+[Start Your Search](https://agile-harbor-23067.herokuapp.com/)
+
 <h6>Search Page<h6>
 <p align="center">
   <img src = screenshots/nyt_react_search_screen.JPG/>
